@@ -1,4 +1,4 @@
-body{
+body {
    background: url('background.jpg');
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -8,7 +8,83 @@ body{
    background-size: 100% cover!important;
    overflow:hidden;
    display: block;
-} 
+}
+#main-container-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.yellow-button {
+    background-color: yellow;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    padding-left:5px;
+    color:black;
+}
+.postButtons {
+ align-self: center;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    padding: 10px;
+    outline: none;
+}
+.label-text {
+    font-weight: bold;
+    margin: 10px 0;
+}
+.modal-content{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+.modal-head {
+  display: flex;
+  flex-direction: column;
+}
+.close {
+  display: flex;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.modal-title{
+  align-self: center;
+}
+.signin-btn {
+    background-color: green;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.signup {
+  color: blue;
+  font-weight: bolder;
+  margin-left: 10px;
+  cursor: pointer;
+}
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
-                                 
