@@ -1,5 +1,5 @@
 .blogTite {
-    font-size: 150%;
+   /* font-size: 150%;*/
     font-family: 'Abel', sans-serif;
     font-weight: bold;
 	text-align:center;
@@ -52,5 +52,20 @@ textarea{
 		overflow: auto;
 	}
 .allcomments{
-	background:#E2E4E6;
+	 background-color:#E2E4E6;
+	 align-items:center;
+	 padding:10px;
+	 width:60%;
+	 margin-left:  auto;
+	 margin-right: auto;
+}
+.cmtPara{
+
+  background-color: white;
+	margin-left:  auto;
+    margin-right: auto;
+	width:90%;
+	height:20px;
+	padding:10px;
+
 }
