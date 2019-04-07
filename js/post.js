@@ -20,19 +20,19 @@ function likeFunction(){
 }
 
 function editAndSave() {
-    if(editableParagraph.contentEditable == "false"){
-        editableParagraph.contentEditable = "true";
-        saveIcon.style.display = "block";
-        editIcon.style.display = "none";
-        editableParagraph.style.border ="1px solid grey";
-    }
-    else{
-        editableParagraph.contentEditable = "false";
-        saveIcon.style.display = "none";
-        editIcon.style.display = "block";
-        editableParagraph.style.border ="none";
-        editableParagraph.defaultValue += editableParagraph.value;
-    }
+  if (blogBody.contentEditable == 'true') {
+      blogBody.contentEditable = 'false';
+      blogBody.style.border = 'none';
+      blogTitleNew.contentEditable = 'false';
+      blogTitleNew.style.border = 'none';
+      button.innerHTML = 'Edit <i class="fa fa-edit"></i>';
+  } else {
+      blogBody.contentEditable = 'true';
+      blogBody.style.border = '1px solid red';
+      blogTitleNew.contentEditable = 'true';
+      blogTitleNew.style.border = '1px solid red';
+      button.innerHTML = 'Save <i class="fa fa-save"></i>';
+  }
 }
 function addComments(id) {
     if(id.value == "") {
