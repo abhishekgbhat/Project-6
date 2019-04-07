@@ -1,4 +1,34 @@
+/*Edit event*/
+
+function editContent(){
+	 var edit = document.getElementById("edit");
+	 
+	 var blogTitleNew =document.getElementById("blogTitleNew");
+	 
+	 var blogBody= document.getElementById("blogBody");
+	 
+  if (blogBody.contentEditable == "false" && blogTitleNew.contentEditable == "false") {
+		blogBody.contentEditable = "true";
+		blogBody.style.border="2px solid pink";
+		blogTitleNew.contentEditable ="true";
+		blogTitleNew.style.border="2px solid pink";
+    edit.innerHTML = "Save";
+  } else {
+    blogBody.contentEditable = "false";
+    blogBody.style.border="none";
+	
+	blogTitleNew.contentEditable = "false";
+    blogTitleNew.style.border="none";
+	
+    edit.innerHTML = "Edit";
+  
+  }
+}
+
+
 /*Count Like */
+
+
 var numberOfClicks=0;
 function postLiked(){
     document.getElementById("likeBlog").innerHTML ='<i class="fa fa-thumbs-up"></i>'+ "Liked!";
@@ -12,11 +42,27 @@ function postLiked(){
         }
         }
     }
+	
 /*add and Display Comment*/
 
-function addComments(id){
-        var addEventName = id.value +'<br>';
-        var a = document.getElementById('userComments');
-        document.getElementById('addEventNames').innerHTML += '<p style="background-color:white;color: red ;width:80%;padding:5px;">'+addEventName+'</p>';          
-        a.value=a.defaultValue;
-    }
+var x=0;
+var cmt = Array();
+
+
+function addComments(){
+    //store value in cmt []
+    cmt[x] = document.getElementById("userComments").value;
+    x++;
+    document.getElementById("userComments").value = "";
+    
+   //fetch comments from Array
+   var e = "";   
+    
+   for (var y=(cmt.length)-1; y>-1; y--)
+   {
+     e += '<p class="cmtPara"> '  + cmt[y] + '</p>';
+	
+   }
+   document.getElementById("addEventNames").innerHTML = e;
+    
+}
