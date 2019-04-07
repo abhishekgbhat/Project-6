@@ -19,17 +19,12 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
      font-family: 'Satisfy', cursive;
 
  }
+
 .middleText{
     font-size: 16px;
     margin-top: -3px;
     padding-left: 10px;
     font-family: 'Satisfy', cursive;
-}
-
-.middleText {
-  font-size: 16px;
-  margin-top: -3px;
-  padding-left: 10px;
 }
 
 .modal {
