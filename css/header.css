@@ -2,21 +2,28 @@
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 
 .topButtons {
-  background-color: blue;
-  font-size: 14px;
-  float: right;
-  margin-right: 10px;
-  margin-top: 5px;
-  padding: 10px 18px;
-  color: white;
-  cursor: pointer;
-}
+    background-color: blue;
+    font-size: 14px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 10px 18px;
+    color: white;
+    cursor: pointer;
+ }
+ .logo-title {
+   color: #1f21a8;
+   font-size: 50px;
+   text-decoration: none;
+   padding-left: 8px;
+     font-family: 'Satisfy', cursive;
 
-.logo-title {
-  color: #1f21a8;
-  font-size: 50px;
-  text-decoration: none;
-  padding-left: 8px;
+ }
+.middleText{
+    font-size: 16px;
+    margin-top: -3px;
+    padding-left: 10px;
+    font-family: 'Satisfy', cursive;
 }
 
 .middleText {
