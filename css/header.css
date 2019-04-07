@@ -16,11 +16,14 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
    font-size: 50px;
    text-decoration: none;
    padding-left: 8px;
-}
+     font-family: 'Satisfy', cursive;
+
+ }
 .middleText{
     font-size: 16px;
     margin-top: -3px;
     padding-left: 10px;
+    font-family: 'Satisfy', cursive;
 }
 .modal {
   display: none;
