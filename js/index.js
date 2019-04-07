@@ -1,13 +1,12 @@
 var createPost = document.getElementById("createPostModal");
-function createPostModal(){
-    createPost.style.display="block";
+function createPostModal (){
+    createPost.style.display = "block";
 }
 
-function hideModal3() {
-    createPost.style.display="none";
+function hideModal3 () {
+    createPost.style.display = "none";
 }
 
-function redirectToAllPosts() {
+function redirectToAllPosts () {
     window.location.href = 'html/bloglist.html';
 }
-
