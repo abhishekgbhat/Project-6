@@ -1,29 +1,37 @@
-function showSignInModal(){
-  var modal = document.getElementById("signin-modal");
-  modal.style.display = "flex";
+var signIn = document.getElementById("SignInModal");
+var signUp = document.getElementById("SignUpModal");
+var createPost = document.getElementById("createPostModal");
+
+function modalDialog1() {
+    signIn.style.display = "block";
 }
 
-function hideSignInModal(){
-  var modal = document.getElementById("signin-modal");
-  modal.style.display = "none";
+function hideModal1(){
+    signIn.style.display = "none";
 }
 
-function showSignUpModal(){
-  var modal = document.getElementById("signup-modal");
-  modal.style.display = "flex";
+function modalDialog2(){
+    signUp.style.display = "block";
 }
 
-function hideSignUpModal(){
-  var modal = document.getElementById("signup-modal");
-  modal.style.display = "none";
+function hideModal2(){
+    signUp.style.display = "none";
 }
 
-function showCreatePostModal(){
-  var modal = document.getElementById("create-post-modal");
-  modal.style.display = "flex";
-}
+document.onclick = function(event){
+    if (event.target == signIn) {
+      signIn.style.display = "none";
+    }
+   else if(event.target == signUp)
+    {
+        signUp.style.display = "none";
+    }
+    else if(event.target == createPost) {
+        createPost.style.display = "none";
+    }
+  };
 
-function hideCreatePostModal(){
-  var modal = document.getElementById("create-post-modal");
-  modal.style.display = "none";
-}
+  function newModal(){
+    signIn.style.display = "none";
+    signUp.style.display = "block";
+  }

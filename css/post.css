@@ -1,10 +1,10 @@
-.blogTite {
-   /* font-size: 150%;*/
+.blogTite{
+    font-size: 150%;
     font-family: 'Abel', sans-serif;
     font-weight: bold;
-	text-align:center;
+    padding: 20px;
 }
-.blogText {
+.blogText{
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
@@ -12,60 +12,100 @@
     padding: 0px 0px 0px 10px;
     font-family: 'Niconne', cursive;
     font-size: 30px;
-	 display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+    margin: 0 70px;
 }
+.blogContent{
+   display: flex;
+   justify-content: center;
+}
+
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
 
-.blogContent{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.blogText {
+    padding: 0px 0px 0px 10px;
+    margin: 0 70px;
 }
-.red-button{
-	background-color:red;
-    padding:8px;
-	color:white;
-	width:100px;
-	border: none;
-	border-radius: 12px;
-	opacity: 0.6;
-	transition: 0.3s;
-	}
-.red-button:hover {opacity: 1}
-
-
-.likeBlogButton{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 10px;
-  
+#blogBody {
+    text-align: justify;
 }
-textarea{
-    	width: 1000px;
-    	height:100px;
-	    margin-top: 10px;
-		resize: both;
-		overflow: auto;
-	}
-.allcomments{
-	 background-color:#E2E4E6;
-	 align-items:center;
-	 padding:10px;
-	 width:60%;
-	 margin-left:  auto;
-	 margin-right: auto;
+
+#p1{
+    display:inline;
 }
-.cmtPara{
+#p2{
+    word-spacing: 3px;
+}
+#p3{
+    font-weight: 700;
+    margin-top: 30px;
+}
+.p4{
+    padding: 20px 10px;
+    margin: 20px;
+    background-color: #fff;
+}
+#editIcon{
+    float: right;
+    width: 70px;
+    background-color: #EF3B65;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 30px -8px #EF3B65;
+}
+#saveIcon{
+        display: none;
+        float: right;
+        width: 70px;
+        background-color: #EF3B65;
+        padding: 10px;
+        border: none;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        box-shadow: 0 8px 30px -8px #EF3B65;
 
-  background-color: white;
-	margin-left:  auto;
-    margin-right: auto;
-	width:90%;
-	height:20px;
-	padding:10px;
-
+}
+.likeIcon{
+    float: left;
+    width: 120px;
+    border-radius: 3px;
+    background-color: #EF3B65;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 6px 20px -4px #EF3B65;
+}
+.likeCommentSection{
+    display: flex;
+    padding: 10px 0px 0px 10px;
+    margin: 0 70px;
+    flex-flow: column wrap;
+}
+.items{
+    margin-top: -6px;
+}
+#commentbox{
+    max-width: 100%;
+}
+#commentbtn {
+    float: left;
+    width: 100px;
+    margin-top: 10px;
+    background-color: rgb(235, 46, 90);
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 20px -6px #EF3B65;
+}
+#addComment{
+    background-color: #E2E4E6;
+    display: flex;
+    flex-direction: column-reverse;
 }
