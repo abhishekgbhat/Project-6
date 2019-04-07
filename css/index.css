@@ -1,4 +1,4 @@
-body {
+body{
    background: url('background.jpg');
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -9,82 +9,74 @@ body {
    overflow:hidden;
    display: block;
 }
-#main-container-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
-}
-.yellow-button {
-    background-color: yellow;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 5px;
-    padding-left:5px;
-    color:black;
-}
-.postButtons {
- align-self: center;
-}
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    justify-content: center;
-    align-items: center;
-}
-form {
-    display: flex;
-    flex-direction: column;
-}
-input {
-    padding: 10px;
-    outline: none;
-}
-.label-text {
-    font-weight: bold;
-    margin: 10px 0;
-}
-.modal-content{
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 40%;
-}
-.modal-head {
-  display: flex;
-  flex-direction: column;
-}
-.close {
-  display: flex;
-  align-self: flex-end;
-  cursor: pointer;
-}
-.modal-title{
-  align-self: center;
-}
-.signin-btn {
-    background-color: green;
-    padding: 10px;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-.signup {
-  color: blue;
-  font-weight: bolder;
-  margin-left: 10px;
-  cursor: pointer;
-}
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
+.postButtons{
+    text-align: center;
+    transform: translate(0,150px);
+ }
+ .middlebutton{
+ 	background: #c9b328;
+ 	font-weight: 700;
+ 	font-size: 16px;
+  padding: 10px 12px;
+  margin: 5px;
+  cursor: pointer;
+ }
+ .midbtn{
+ 	text-decoration: none;
+ 	color: black;
+ }
+ .modal1 {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.4);
+ }
+ .modal-content1 {
+    transform: translate(0,130px);
+   background-color: #fefefe;
+   margin: 2% auto;
+   padding: 8px 20px;
+   border: 1px solid #888;
+   width: 28%;
+ }
+ .modal-header1 h1 {
+   text-align: center;
+   color: black;
+ }
+ .postbtns {
+   display: flex;
+   justify-content: flex-end;
+ }
+ .postbtn {
+    margin: 0 5px;
+ }
+ #createpostbtn a{
+    text-decoration: none;
+    color: white;
+ }
+ #createpostbtn{
+   padding:12px 7px;
+   width: 100px;
+   background-color:#5eb762;
+   color: white;
+   outline: none;
+   border: none;
+   cursor: pointer;
+ }
+ #closepostbtn{
+   width: 100px;
+   padding:12px 7px;
+   background-color: #f5564a;
+   color: white;
+   outline: none;
+   border: none;
+   cursor: pointer;
+ }
