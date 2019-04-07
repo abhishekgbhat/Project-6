@@ -11,6 +11,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     color: white;
     cursor: pointer;
  }
+
  .logo-title {
    color: #1f21a8;
    font-size: 50px;
@@ -19,8 +20,8 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
      font-family: 'Satisfy', cursive;
 
  }
-
-.middleText{
+ 
+.middleText {
     font-size: 16px;
     margin-top: -3px;
     padding-left: 10px;
