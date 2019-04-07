@@ -6,3 +6,8 @@ function createPostModal(){
 function hideModal3() {
     createPost.style.display="none";
 }
+
+function redirectToAllPosts() {
+    window.location.href = 'html/bloglist.html';
+}
+
